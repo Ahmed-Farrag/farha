@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>farha</title>
+    <link rel="icon" href="img/hi.png" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+
+  <body class="loading">
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light ml-auto shadow rounded">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/Group 200.png" class="black w-50" alt="" />
+        <img src="img/bwhite.png" class="whight w-50" alt="" />
+      </a>
+      <button
+        class="navbar-toggler ml-aut"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-search"></i>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-md-center"
+        style="flex-basis: 0%"
+        id="navbarSupportedContent"
+      >
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-1"
+            type="search"
+            placeholder="بحث"
+            aria-label="Search"
+          />
+          <i class="fas fa-search"></i>
+        </form>
+      </div>
+
+      <div class="social">
+        <label class="switch">
+          <input type="checkbox" checked onclick="myFunction()" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <!-- حسابي  -->
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown mk">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            style="color: #5855bc"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span style="color: #5855bc; font-weight: bold"> حسابي </span>
+            <i class="fas fa-user" style="color: #5855bc"></i>
+          </a>
+          <div
+            class="dropdown-menu text-right"
+            aria-labelledby="navbarDropdown"
+          >
+            <a class="dropdown-item" href="myData.html"
+              ><i class="fas fa-address-book"></i> بياناتي</a
+            >
+            <a class="dropdown-item" href="myAds.html"
+              ><i class="fas fa-music fa-1x"></i> مقاطعي</a
+            >
+            <a class="dropdown-item" href="addAds.html"
+              ><i class="fas fa-plus"></i> اضف ممقطع</a
+            >
+            <a class="dropdown-item" href="index.html" style="color: red"
+              ><i class="fas fa-door-open"></i> تسجيل الخروج</a
+            >
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!--end navbar-->
+
+    <!--start data-->
+
+    <div class="data">
+      <div class="container text-center">
+        <div class="row" style="margin-bottom: 50px">
+          <div class="col-md-12 col-sm-12 py-4">
+            <h2 class="card-title color">
+              <i class="fas fa-table fa-1x"></i> بياناتي الشخصية
+            </h2>
+          </div>
+
+          <div class="card" style="border-radius: 10px">
+            <div class="card-body text-center">
+              <!-- form start -->
+              <form role="form" method="POST" action="">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="form-group col-lg-6 col-sm-12">
+                      <label for="fname" class="float-right">
+                        اسم الفنان
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="fname"
+                        id="fname"
+                        placeholder="إدخل اسم الفنان"
+                      />
+                    </div>
+
+                    <div class="form-group col-lg-6 col-sm-12">
+                      <label for="email" class="float-right">
+                        البريد اللإلكتروني</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="إدخل البريد الإلكتروني"
+                      />
+                    </div>
+                    <div class="form-group col-lg-6 col-sm-12">
+                      <label class="float-right"> صورة الفنان </label>
+                      <div class="input-group">
+                        <span class="input-group-btn">
+                          <span class="btn btn-light btn-file file1">
+                            إستعرض
+                            <input name="stu_photo" type="file" id="imgInp1" />
+                          </span>
+                        </span>
+                        <input type="text" class="form-control" readonly />
+                      </div>
+                      <img id="img-upload1" class="img-fluid" />
+                    </div>
+                    <div class="form-group col-lg-6 col-sm-12">
+                      <label for="phone" class="float-right">
+                        رقم الهاتف
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="phone"
+                        id="phone"
+                        placeholder="إدخل رقم الهاتف"
+                      />
+                    </div>
+                    <div class="form-group col-lg-6 col-sm-12" id="password">
+                      <label for="password" class="float-right">
+                        كلمة المرور
+                      </label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        name="password"
+                        placeholder="إدخل كلمة المرور"
+                      />
+                    </div>
+                    <div class="form-group col-lg-6 col-sm-12" id="re_password">
+                      <label for="rePass" class="float-right">
+                        أعد كلمة المرور
+                      </label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="rePass"
+                        placeholder="أعد كتابة كلمة المرور"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="clr"></div>
+                <br />
+                <button
+                  type="submit"
+                  name="search"
+                  class="btn btn-primar btn-block mb-3"
+                >
+                  <i class="fas fa-check"></i> حفظ التعديل
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .data .btn-primar {
+        color: #fff;
+        background-color: #5855bc;
+      }
+
+      /* addAds */
+
+      .data form input {
+        border-radius: 10px;
+      }
+      .btn-file {
+        background-color: #e65986;
+        color: white;
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        height: 40px;
+      }
+      .btn-file:hover {
+        background-color: #e65986;
+      }
+
+      /* Img Upload */
+      .btn-file {
+        position: relative;
+        overflow: hidden;
+        /* height: 50px; */
+      }
+      .btn-file input[type="file"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 105%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+      }
+      #img-upload {
+        width: 100%;
+      }
+
+      /* navbar */
+
+      @media (max-width: 1200px) {
+        .collapse .form-inline input {
+          width: 400px;
+          border-radius: 20px;
+        }
+      }
+      @media (max-width: 922px) {
+        .collapse .form-inline input {
+          width: auto;
+        }
+      }
+
+      /* darkmode */
+      .dark-mode .form-control,
+      .dark-mode .input-group-text {
+        background-color: #3a3a3a;
+        color: #fff;
+      }
+    </style>
+
+    <!--end data-->
+
+    <!--start footer-->
+    <div class="wi mt-4">
+      <br /><br />
+      <div class="footer text-center" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <ul class="list-unstyled links-list text-center-mobile mt-5">
+                <li class="h1">
+                  <a href="#"
+                    ><i class="fas fa-envelope"></i> farha@gmail.com
+                  </a>
+                </li>
+                <li class="h1">
+                  <a href="#"> <i class="fas fa-phone"></i> 01157932907</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <ul class="list-unstyled links-list text-center-mobile mt-5">
+                <li class="h1"><a href="ruls.html"> اسألة شائعة </a></li>
+                <li class="h1"><a href="#"> اتصل بنا</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <a class="navbar-brand" href="#">
+                <img src="img/Group 201.png" class="img-fluid" alt="" />
+              </a>
+              <div class="social text-gray">
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-facebook"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-instagram"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-twitter"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-youtube"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <hr />
+            <div class="col-12 mt-5">
+              <hr style="background-color: #5855bc; height: 3px" />
+              <h4 class="text-center">جميع حقوق النشر محفوظة 2020 فرحة</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end footer-->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.nicescroll.js"></script>
+    <script src="vendor/nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"></script>
+
+    <script src="js/js.js"></script>
+  </body>
+</html>

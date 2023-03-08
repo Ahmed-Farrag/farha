@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>farha</title>
+    <link rel="icon" href="img/hi.png" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+
+  <body class="loading">
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light ml-auto shadow rounded">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/Group 200.png" class="black w-50" alt="" />
+        <img src="img/bwhite.png" class="whight w-50" alt="" />
+      </a>
+      <button
+        class="navbar-toggler ml-aut"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-search"></i>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-md-center"
+        style="flex-basis: 0%"
+        id="navbarSupportedContent"
+      >
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-1"
+            type="search"
+            placeholder="بحث"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+      <div class="social">
+        <label class="switch">
+          <input type="checkbox" checked onclick="myFunction()" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <!-- حسابي  -->
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown mk">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            style="color: #5855bc"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span style="color: #5855bc; font-weight: bold"> حسابي </span>
+            <i class="fas fa-user" style="color: #5855bc"></i>
+          </a>
+          <div
+            class="dropdown-menu text-right"
+            aria-labelledby="navbarDropdown"
+          >
+            <a class="dropdown-item" href="myData.html"
+              ><i class="fas fa-address-book"></i> بياناتي</a
+            >
+            <a class="dropdown-item" href="myAds.html"
+              ><i class="fas fa-music fa-1x"></i> مقاطعي</a
+            >
+            <a class="dropdown-item" href="addAds.html"
+              ><i class="fas fa-plus"></i> اضف ممقطع</a
+            >
+            <a class="dropdown-item" href="index.html" style="color: red"
+              ><i class="fas fa-door-open"></i> تسجيل الخروج</a
+            >
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!--end navbar-->
+
+    <!-- start table -->
+    <div class="tabl py-5">
+      <div class="container-fluid text-center">
+        <h1 class="color"><i class="fas fa-music fa-1x"></i> مقاطعي</h1>
+
+        <div class="row">
+          <div class="col-md-12 col-sm-12 py-3">
+            <div class="card" style="border-radius: 20px">
+              <div class="card-body text-center" style="overflow-x: auto">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">عنوان العمل</th>
+                      <th scope="col">التصنيف</th>
+                      <th scope="col">المقطع</th>
+                      <th scope="col">السعر</th>
+                      <th scope="col">وقت الانشاء</th>
+                      <th scope="col">وقت التعديل</th>
+                      <th scope="col">امر</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <th>اغنيه ( مفيش زيهم )</th>
+                      <th>موسيقات</th>
+                      <td>
+                        <i
+                          class="far fa-play-circle fa-2x"
+                          data-toggle="modal"
+                          data-target="#mymodal"
+                          style="cursor: pointer"
+                        ></i>
+                      </td>
+                      <td>50 ر.س</td>
+                      <td>12/7/2020</td>
+                      <td>13/7/2020</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn btn-block btn-primary btn-sm"
+                          style="font-size: 13px; background-color: #5855bc"
+                        >
+                          تعديل
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-block btn-danger btn-sm"
+                          style="font-size: 13px; background-color: #e65986"
+                        >
+                          حذف
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--start modal-->
+    <div class="modal" tabindex="-1" role="dialog" id="mymodal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="img/ManWeb_landing.png" class="img-fluid" alt="" />
+                </div>
+                <div class="col-md-6 mt-5">
+                  <h3>اغنيه ( مفيش زيهم ) - علياء & احمد</h3>
+                  <p>الفنان : غاده رجب</p>
+                  <div class="but2 mb-4">
+                    <a href="#" class="btn btn-primar mt-4">
+                      <i class="fab fa-whatsapp"></i> اطلب</a
+                    >
+                  </div>
+                </div>
+
+                <div class="col-md-12" style="margin-top: 10px">
+                  <audio
+                    controls=""
+                    autoplay=""
+                    id="audio-player"
+                    style="width: 100%; bottom: 0"
+                    src="https://zafatalmasa.net/audios/209bb3361a9ba32d212a40a829d2370b.mp3"
+                    type="audio/mp3"
+                  ></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-inf"
+              data-dismiss="modal"
+              style="
+                background-color: #e65986;
+                color: white;
+                border-radius: 15px;
+              "
+            >
+              اغلاق
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--start modal-->
+
+    <!--start footer-->
+    <div class="wi mt-4">
+      <br /><br />
+      <div class="footer text-center" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <ul class="list-unstyled links-list text-center-mobile mt-5">
+                <li class="h1">
+                  <a href="#"
+                    ><i class="fas fa-envelope"></i> farha@gmail.com
+                  </a>
+                </li>
+                <li class="h1">
+                  <a href="#"> <i class="fas fa-phone"></i> 01157932907</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <ul class="list-unstyled links-list text-center-mobile mt-5">
+                <li class="h1"><a href="ruls.html"> اسألة شائعة </a></li>
+                <li class="h1"><a href="#"> اتصل بنا</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <a class="navbar-brand" href="#">
+                <img src="img/Group 201.png" class="img-fluid" alt="" />
+              </a>
+              <div class="social text-gray">
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-facebook"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-instagram"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-twitter"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-youtube"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <hr />
+            <div class="col-12 mt-5">
+              <hr style="background-color: #5855bc; height: 3px" />
+              <h4 class="text-center">جميع حقوق النشر محفوظة 2020 فرحة</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end footer-->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.nicescroll.js"></script>
+    <script src="vendor/nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"></script>
+
+    <script src="js/js.js"></script>
+  </body>
+</html>

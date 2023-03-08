@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>categury</title>
+    <link rel="icon" href="img/hi.png" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+
+  <body class="loading">
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/Group 200.png" class="black w-50" alt="" />
+        <img src="img/bwhite.png" class="whight w-50" alt="" />
+      </a>
+      <button
+        class="navbar-toggler ml-aut"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-search"></i>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-md-center"
+        style="flex-basis: 0%"
+        id="navbarSupportedContent"
+      >
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-1"
+            type="search"
+            placeholder="بحث"
+            aria-label="Search"
+          />
+          <i class="fas fa-search"></i>
+        </form>
+      </div>
+
+      <div class="social">
+        <label class="switch">
+          <input type="checkbox" checked onclick="myFunction()" />
+          <span class="slider round"></span>
+        </label>
+
+        <a href="https://www.facebook.com/BMW/"
+          ><i class="fab fa-2x fa-facebook" style="color: blue"></i
+        ></a>
+        <a href="https://twitter.com/bmw?lang=ar"
+          ><i class="fab fa-2x fa-twitter" style="color: skyblue"></i
+        ></a>
+        <a href="https://www.youtube.com/user/BMW"
+          ><i class="fab fa-2x fa-youtube" style="color: red"></i
+        ></a>
+      </div>
+    </nav>
+    <!--end navbar-->
+
+    <!-- start section -->
+    <div class="container-fluid section" id="modall">
+      <div class="row">
+        <div class="col-md-2">
+          <h3 class="menu-text mb-3">القائمة</h3>
+          <ul class="navbar-nav" id="nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#1">مقدمات الزفاف </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">أشعار وقصائد</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">موسيقات</a></li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#">زفاف بدون اسماء</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">زفاف بدون موسيقي-بدون أسماء</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">زفاف بدون موسيقي- بالاسماء</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ايقاعات ومؤثرات صوتية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#"
+                >زفات واغاني مع فنانين زفه المساء</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#"> زفلت وداعيه</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#">زفات بالاسماء جاهزة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#"> زفات كاملة برنامج</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#">زفة المعرس</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#">زفات ترحيب</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#">زفات شامية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#">
+                مسيرات واغاني التخرج - اختر القسم</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#"
+                >نفيزنا الحصري مع كبار الفنانين</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#">مناسبات اخري</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#">شيلات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#">مقاتع فيديو</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="col-md-10 gh text mt-4"
+          style="overflow-y: auto; height: 1000px"
+        >
+          <div class="container">
+            <div class="hy">
+              <div class="header-content">
+                <h3 class="mb-4" id="1">مقدمات الزفاف</h3>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-6 mt-4">
+                  <div class="card mr-3">
+                    <div class="buttons mt-4">
+                      <div class="but1 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> جديد</a>
+                      </div>
+                      <div class="but2 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> اطلب</a>
+                      </div>
+                      <div class="but3 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> 50 ر.س</a>
+                      </div>
+                      <div class="but4 text-left mb-4">
+                        <a href="#modall" class="btn" style="cursor: pointer"
+                          ><i
+                            class="fas fa-play-circle fa-4x"
+                            data-toggle="modal"
+                            data-target="#mymodal"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+
+                    <div class="img">
+                      <img src="img/i.png" class="w-75" />
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        اغنيه ( مفيش زيهم ) - علياء & احمد
+                      </h5>
+                      <p class="card-text">الفنان : غاده رجب</p>
+                      <hr />
+                    </div>
+                  </div>
+
+                  <!--start modal-->
+                  <div
+                    class="modal fade"
+                    tabindex="-1"
+                    role="dialog"
+                    id="mymodal"
+                  >
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img
+                                  src="img/ManWeb_landing.png"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-6 mt-5">
+                                <h3>اغنيه ( مفيش زيهم ) - علياء & احمد</h3>
+                                <p>الفنان : غاده رجب</p>
+                                <div class="but2 mb-4">
+                                  <a href="#" class="btn btn-primar mt-4">
+                                    <i class="fab fa-whatsapp"></i> اطلب</a
+                                  >
+                                </div>
+                              </div>
+
+                              <div class="col-md-12" style="margin-top: 10px">
+                                <audio
+                                  controls=""
+                                  autoplay=""
+                                  id="audio-player"
+                                  style="width: 100%; bottom: 0"
+                                  src="https://zafatalmasa.net/audios/209bb3361a9ba32d212a40a829d2370b.mp3"
+                                  type="audio/mp3"
+                                ></audio>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-inf"
+                            data-dismiss="modal"
+                            style="
+                              background-color: #e65986;
+                              color: white;
+                              border-radius: 15px;
+                            "
+                          >
+                            اغلاق
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--start modal-->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                  <div class="card mr-3">
+                    <div class="buttons mt-4">
+                      <div class="but1 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> جديد</a>
+                      </div>
+                      <div class="but2 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> اطلب</a>
+                      </div>
+                      <div class="but3 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> 50 ر.س</a>
+                      </div>
+                      <div class="but4 text-left mb-4">
+                        <a href="#modall" class="btn" style="cursor: pointer"
+                          ><i
+                            class="fas fa-play-circle fa-4x"
+                            data-toggle="modal"
+                            data-target="#mymodal"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+
+                    <div class="img">
+                      <img src="img/a.png" class="w-75" />
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        اغنيه ( مفيش زيهم ) - علياء & احمد
+                      </h5>
+                      <p class="card-text">الفنان : غاده رجب</p>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                  <div class="card mr-3">
+                    <div class="buttons mt-4">
+                      <div class="but1 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> جديد</a>
+                      </div>
+                      <div class="but2 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> اطلب</a>
+                      </div>
+                      <div class="but3 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> 50 ر.س</a>
+                      </div>
+                      <div class="but4 text-left mb-4">
+                        <a href="#modall" class="btn" style="cursor: pointer"
+                          ><i
+                            class="fas fa-play-circle fa-4x"
+                            data-toggle="modal"
+                            data-target="#mymodal"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+
+                    <div class="img">
+                      <img src="img/e.png" class="w-75" />
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        اغنيه ( مفيش زيهم ) - علياء & احمد
+                      </h5>
+                      <p class="card-text">الفنان : غاده رجب</p>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                  <div class="card mr-3">
+                    <div class="buttons mt-4">
+                      <div class="but1 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> جديد</a>
+                      </div>
+                      <div class="but2 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> اطلب</a>
+                      </div>
+                      <div class="but3 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> 50 ر.س</a>
+                      </div>
+                      <div class="but4 text-left mb-4">
+                        <a href="#modall" class="btn" style="cursor: pointer"
+                          ><i
+                            class="fas fa-play-circle fa-4x"
+                            data-toggle="modal"
+                            data-target="#mymodal"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+
+                    <div class="img">
+                      <img src="img/q.png" class="w-75" />
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        اغنيه ( مفيش زيهم ) - علياء & احمد
+                      </h5>
+                      <p class="card-text">الفنان : غاده رجب</p>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                  <div class="card mr-3">
+                    <div class="buttons mt-4">
+                      <div class="but1 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> جديد</a>
+                      </div>
+                      <div class="but2 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> اطلب</a>
+                      </div>
+                      <div class="but3 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> 50 ر.س</a>
+                      </div>
+                      <div class="but4 text-left mb-4">
+                        <a href="#modall" class="btn" style="cursor: pointer"
+                          ><i
+                            class="fas fa-play-circle fa-4x"
+                            data-toggle="modal"
+                            data-target="#mymodal"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+
+                    <div class="img">
+                      <img src="img/h.png" class="w-75" />
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        اغنيه ( مفيش زيهم ) - علياء & احمد
+                      </h5>
+                      <p class="card-text">الفنان : غاده رجب</p>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                  <div class="card mr-3">
+                    <div class="buttons mt-4">
+                      <div class="but1 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> جديد</a>
+                      </div>
+                      <div class="but2 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> اطلب</a>
+                      </div>
+                      <div class="but3 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> 50 ر.س</a>
+                      </div>
+                      <div class="but4 text-left mb-4">
+                        <a href="#modall" class="btn" style="cursor: pointer"
+                          ><i
+                            class="fas fa-play-circle fa-4x"
+                            data-toggle="modal"
+                            data-target="#mymodal"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+
+                    <div class="img">
+                      <img src="img/s.png" class="w-75" />
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        اغنيه ( مفيش زيهم ) - علياء & احمد
+                      </h5>
+                      <p class="card-text">الفنان : غاده رجب</p>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                  <div class="card mr-3">
+                    <div class="buttons mt-4">
+                      <div class="but1 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> جديد</a>
+                      </div>
+                      <div class="but2 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> اطلب</a>
+                      </div>
+                      <div class="but3 text-left mb-4">
+                        <a href="#" class="btn btn-primar"> 50 ر.س</a>
+                      </div>
+                      <div class="but4 text-left mb-4">
+                        <a href="#modall" class="btn" style="cursor: pointer"
+                          ><i
+                            class="fas fa-play-circle fa-4x"
+                            data-toggle="modal"
+                            data-target="#mymodal"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+
+                    <div class="img">
+                      <img src="img/s.png" class="w-75" />
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        اغنيه ( مفيش زيهم ) - علياء & احمد
+                      </h5>
+                      <p class="card-text">الفنان : غاده رجب</p>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="butn text-center mb-4">
+                <button class="btn btn-inf" id="next">شاهد المزيد</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--start footer-->
+    <div class="wi mt-4">
+      <br /><br />
+      <div class="footer text-center" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <ul class="list-unstyled links-list text-center-mobile mt-5">
+                <li class="h1">
+                  <a href="#"
+                    ><i class="fas fa-envelope"></i> farha@gmail.com
+                  </a>
+                </li>
+                <li class="h1">
+                  <a href="#"> <i class="fas fa-phone"></i> 01157932907</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <ul class="list-unstyled links-list text-center-mobile mt-5">
+                <li class="h1"><a href="ruls.html"> اسألة شائعة </a></li>
+                <li class="h1"><a href="#"> اتصل بنا</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <a class="navbar-brand" href="#">
+                <img src="img/Group 201.png" class="img-fluid" alt="" />
+              </a>
+              <div class="social text-gray">
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-facebook"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-instagram"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-twitter"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fab fa-2x fa-youtube"
+                    style="color: #fff; margin: 10px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <hr />
+            <div class="col-12 mt-5">
+              <hr style="background-color: #5855bc; height: 3px" />
+              <h4 class="text-center">جميع حقوق النشر محفوظة 2020 فرحة</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end footer-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/jquery-3.3.1.js"></script> -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.nicescroll.js"></script>
+    <!-- <script src="vendor/nav.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"></script>
+
+    <script src="js/js.js"></script>
+  </body>
+</html>
